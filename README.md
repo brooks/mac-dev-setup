@@ -2,8 +2,6 @@
 
 This document describes how I set up my developer environment on a new MacBook or iMac. We will set up [Python](http://www.python.org/), [Node](http://nodejs.org/) (JavaScript), and [Ruby](http://www.ruby-lang.org/) environments, mainly for JavaScript development. Even if you don't program in all three, it is good to have them as many command-line tools use one of them. As you read  and follow these steps, feel free to send me any feedback or comments you may have.
 
-The document assumes you are new to Mac. The steps below were tested on **OS X Mountain Lion**.
-
 - [System update](#system-update)
 - [System preferences](#system-preferences)
 - [Google Chrome](#google-chrome)
@@ -295,7 +293,7 @@ Let's create a shortcut so we can launch Sublime Text from the command-line:
 Now I can open a file with `$ subl myfile.py` or start a new project in the current directory with `$ subl .`. Pretty cool. (Note: the path to the apps shared support folder will change depending on the version of sublime.)
 
 ## Sublime Text Packages to install:
-Install the [Sublime Package Control](http://wbond.net/sublime_packages/package_control/installation). 
+Install the [Sublime Package Control](http://wbond.net/sublime_packages/package_control/installation).
 
 To install individual packages, bring up the Command Palette with Cmd+Shift+P and type "install."  Select "Package Control: Install Package." Once the repositories load search for and install the following packages:
 
@@ -313,7 +311,7 @@ To install individual packages, bring up the Command Palette with Cmd+Shift+P an
 
 ## Customize Sublime Text Packages
 
-It's recommended to style PlainTasks to something more palatable than the default yellow sticky color. 
+It's recommended to style PlainTasks to something more palatable than the default yellow sticky color.
 
 Download the following Plain Tasks theme [here](https://github.com/monsoonco/mac-dev-setup-js/blob/master/DarkNotes.tmTheme) and add it to the folder ~/Library/Application Support/Sublime Text 2/Packages/PlainTasks
 
@@ -445,7 +443,7 @@ You are encouraged to install `ruby-build` using `brew install ruby-build` for m
 For example, install the latest version of 2.0.X:
 
     $ rbenv install 2.0.X-pXXX
-    
+
 To use this version globally now run..
 
     $ rbenv global 2.0.X-pXXX
@@ -490,9 +488,7 @@ I mainly use Ruby for the CSS pre-processor [Compass](http://compass-style.org/)
 ### Gems to install:
 
     $ gem install bundler --no-rdoc --no-ri
-    $ gem install compass --no-rdoc --no-ri
-    $ gem install berkshelf --no-rdoc --no-ri
-    $ gem install chef --no-rdoc --no-ri
+    $ gem install rails --no-rdoc --no-ri
 
 ### Install rbenv-gem-rehash
 
@@ -508,15 +504,7 @@ More details [here](https://github.com/sstephenson/rbenv-gem-rehash).
 
 ### Install
 
-Assuming that you have an account (sign up if you don't), let's install the [Heroku Client](https://devcenter.heroku.com/articles/using-the-cli) for the command-line. Heroku offers a Mac OS X installer, the [Heroku Toolbelt](https://toolbelt.heroku.com/), that includes the client. But for these kind of tools, I prefer using Homebrew. It allows us to keep better track of what we have installed. Luckily for us, Homebrew includes a `heroku-toolbelt` formula:
-
-    $ brew install heroku-toolbelt
-
-The formula might not have the latest version of the Heroku Client, which is updated pretty often. Let's update it now:
-
-    $ heroku update
-
-Don't be afraid to run `heroku update` every now and then to always have the most recent version.
+Assuming that you have an account (sign up if you don't), let's install the [Heroku Client](https://devcenter.heroku.com/articles/heroku-command-line) for the command-line. Heroku offers a Mac OS X installer, the [Heroku Toolbelt](https://toolbelt.heroku.com/), that includes the client. But for these kind of tools, I prefer using Homebrew. It allows us to keep better track of what we have installed. Luckily for us, Homebrew includes a `heroku-toolbelt` formula:
 
 ### Usage
 
@@ -554,7 +542,7 @@ This really depends on how you want to organize your files, but I like to put al
 
 [Vagrant](http://www.vagrantup.com/) is open-source software for creating and configuring virtual development environments. It can be considered a wrapper around VirtualBox and configuration management software such as Chef, Salt and Puppet.
 
-[Download](http://www.vagrantup.com/downloads.html) the latest stable version (v1.3.5), open the installer and follow the instructions.
+[Download](http://www.vagrantup.com/downloads.html) the latest stable version (v1.8.5), open the installer and follow the instructions.
 
 
 ## Virtual Box
@@ -564,21 +552,12 @@ Oracle VM [Virtual Box](https://www.virtualbox.org/wiki/Downloads) is a virtuali
 [Download](https://www.virtualbox.org/wiki/Downloads) and start the installer and follow the instructions.
 
 
-## Adobe Apps
-
-Go to the [Adobe Creative Cloud](https://creative.adobe.com/join/starter) site and set up an account. You'll download the creative cloud app which will allow you to download 30 day trial versions of any application you may need. Monsoon can provide licenses as needed when the trial version of the application has expired.
-
 ## Apps
 
 Other apps to download:
 
 - [Slack](https://slack.com/) Group chat and IM for teams.
-- [Yeoman](http://yeoman.io/): Follow the download instructions. You should already have grunt, but you want yeoman and bower too.
-- [Dropbox](https://www.dropbox.com/): Design shares assets and wireframes and comps with us through Dropbox. You need a dropbox account with your work email.
 - [Google Drive](https://drive.google.com/): File syncing to the cloud too! I use Google Docs a lot to collaborate with others (edit a document with multiple people in real-time!), and sometimes upload other non-Google documents (pictures, etc.), so the app comes in handy for that. **(Free for 5GB)**
-- [Dillinger](http://dillinger.io/): Dillinger is a free, open source markdown editor in the browser. Use the hosted app or download it yourself.
-- Spaces: Multiple desktop feature.  Support page for OS X 10.6 [here](http://support.apple.com/kb/ht1624)
-- [Alfred](http://www.alfredapp.com/): Application hot-launching. Open with Option + Space and start typing what you're looking for. Does lots of other cool stuff.
 - [SizeUp](http://www.irradiatedsoftware.com/sizeup/): A window management tool.  Maps shortcuts that arrange your windows into neat little halves/quadrants/etc.  It's a paid app with an unlimited trial period, the caveat being that it will bug you with a "Buy a license prompt" every so often.
 
 
@@ -589,7 +568,7 @@ Other apps to download:
 
 ## Size Up
  - As with most developers and people that compute, browser management can be a pain. The solution to that is SizeUp.  http://www.irradiatedsoftware.com/sizeup/
- 
+
 
 ##1Password
  - With so many accounts needed, how do you keep track of all the passwords?  1Password is the solution.  Each project will have a 1password vault.  If anyone needs to enter a login and password for a project, it's all managed with 1Password.  Download it here https://agilebits.com/onepassword
